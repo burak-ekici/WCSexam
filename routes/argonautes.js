@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { ArgonautesModel } = require('../models/ArgonautesModel.js');
+const { ArgonautesModel } = require('../models/argonautesModel.js');
 
 router.get("/get", async (req, res) => {
   const argonautes = await ArgonautesModel.find({})
